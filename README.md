@@ -1,23 +1,26 @@
-# Employee Attrition Risk Analysis & HR Retention Dashboard
+# End-to-End People Analytics: Employee Attrition Prediction & Executive BI Dashboard
 
-An end-to-end People Analytics and Machine Learning solution designed to predict employee turnover risk and provide HR leadership with actionable retention strategies.
-
----
-
-## Project Overview
-
-Employee turnover incurs significant organizational costs in recruitment, training, and institutional knowledge loss. This project pairs exploratory data analysis and predictive modeling in Python with an interactive decision-support dashboard in Power BI.
-
-The primary objective is to move from reactive exit reporting to proactive retention management by identifying high-risk personnel and the primary drivers behind attrition.
+An end-to-end Data Science and Business Intelligence solution using the IBM HR Analytics dataset. The project transitions HR management from reactive exit tracking to proactive attrition mitigation through machine learning inference and interactive executive reporting.
 
 ---
 
-## Repository Structure
+##  Business Understanding & Problem Statement
+
+Voluntary employee turnover incurs substantial financial overhead in hiring, training, and operational friction. 
+
+The objectives of this project are:
+* Identify the primary drivers behind attrition across departments and job roles.
+* Build a machine learning classification pipeline to calculate turnover probability per employee.
+* Translate raw predictive outputs into an operational Power BI decision-support tool for HR stakeholders.
+
+---
+
+##  Repository Structure
 
 ```text
-├── rawdata.csv                          # Original IBM HR Analytics dataset
-├── archive.zip                          # Compressed source archive
-├── analysis.ipynb                       # Data cleaning, EDA, feature engineering & model scoring
-├── hr_attrition_dashboard_data.csv      # Processed data with predicted attrition probabilities & risk tiers
-├── Employee Attrition Risk Analysis.pbix # Interactive Power BI Dashboard
-└── README.md                            # Documentation
+├── rawdata.csv                          # Raw IBM HR Analytics dataset
+├── archive.zip                          # Dataset archive package
+├── analysis.ipynb                       # Data cleaning, EDA, feature engineering & model training
+├── hr_attrition_dashboard_data.csv      # Inference dataset with attrition probabilities and risk buckets
+├── Employee Attrition Risk Analysis.pbix # Interactive multi-page Power BI dashboard
+└── README.md                            # End-to-end documentation
